@@ -25,7 +25,7 @@
                     bloboslorca<span class="accent">.</span>dev
                 </a>
                 <div class="divider-line"></div>
-                <a href="#" class="nav-link">Proyectos</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
                 <a href="#" class="nav-link">Sobre mí</a>
                 <div class="divider-line"></div>
                 <a href="#" class="nav-link" style="color: #dc2626; font-weight: 600;">Contacto →</a>
@@ -47,9 +47,9 @@
             </div>
 
             <!-- Headline -->
-            <div class="text-center mb-10 ">
-                <h1>
-                    Blobos<br><span class="accent">Lorca</span>
+            <div class="text-center mb-10 font-black">
+                <h1 class="text-6xl">
+                    Benjamin<span class="accent"> Lobos</span>
                 </h1>
             </div>
 
@@ -64,11 +64,11 @@
             </div>
 
             <!-- Descripción -->
-            <p class="description text-center max-w-3xl mx-auto mb-12">
-                Construyo productos de software end-to-end con
-                <span class="tag">Go</span> y cloud systems.
-                Frontends modernos con <span class="tag">HTMX</span> y <span class="tag">Tailwind CSS</span>,
-                respaldados por microservicios robustos en <span class="tag">AWS</span>.
+            <p class="description text-center max-w-2xl mx-auto mb-14">
+                I build end-to-end software products using
+                <span class="tag">Go</span> and cloud systems.
+                Modern frontends with <span class="tag">HTMX</span> and <span class="tag">Tailwind CSS</span>,
+                backed by robust microservices on <span class="tag">AWS</span>.
             </p>
 
             <!-- CTAs -->
@@ -87,26 +87,6 @@
                             stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </a>
-            </div>
-
-            <!-- Stats -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-                <div class="stat-card text-center">
-                    <p class="text-3xl font-black text-slate-900 mb-1">muchos</p>
-                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Años exp.</p>
-                </div>
-                <div class="stat-card text-center">
-                    <p class="text-3xl font-black text-slate-900 mb-1">caleta bro</p>
-                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Proyectos</p>
-                </div>
-                <div class="stat-card text-center">
-                    <p class="text-3xl font-black text-slate-900 mb-1">alo</p>
-                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Tecnologías</p>
-                </div>
-                <div class="stat-card text-center">
-                    <p class="text-3xl font-black text-slate-900 mb-1">∞</p>
-                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Curiosidad</p>
-                </div>
             </div>
 
             <!-- Stack -->
@@ -134,7 +114,7 @@
 
                     <div class="skill-item">
                         <div class="skill-icon">
-                            <img src="Img/logo.png" alt="HTMX" style="width:20px;height:20px;object-fit:contain;">
+                            <img src="Img/htmx.svg" alt="HTMX" style="width:20px;height:20px;object-fit:contain;">
                         </div>
                         HTMX
                         <span style="font-size:11px;color:#999;font-weight:400;">Frontend</span>
@@ -171,10 +151,115 @@
                     Scroll
                 </div>
             </div>
-
         </div>
     </main>
 
+    <section id="proyectos" class="relative z-10 py-24 px-6 bg-white/30 backdrop-blur-sm border-t border-black/5">
+        <div class="max-w-5xl mx-auto">
+
+            <div class="flex flex-col items-center mb-16">
+                <h2 class="text-4xl font-black mb-4">
+                    Selected<span class="accent"> Projects</span>
+                </h2>
+                <div class="w-12 h-1 bg-red-600 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <div
+                    class="group bg-white border border-black/5 rounded-3xl p-8 hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-300">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="p-3 bg-slate-100 rounded-2xl group-hover:bg-red-50 transition-colors">
+                            <svg class="w-8 h-8 text-slate-700 group-hover:text-red-600" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Django •
+                            PostgreSQL</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Tres En Uno Cultivos</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Fullstack E-commerce built for a client. Features a complete product catalog, order
+                        management system, and transactional email integration.
+                    </p>
+                    <a href="https://tresenunocultivos.cl" target="_blank"
+                        class="inline-flex items-center font-bold text-red-600 gap-2 group-hover:gap-3 transition-all">
+                        Live Site <span>→</span>
+                    </a>
+                </div>
+
+                <div
+                    class="group bg-white border border-black/5 rounded-3xl p-8 hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-300">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="p-3 bg-slate-100 rounded-2xl group-hover:bg-red-50 transition-colors">
+                            <svg class="w-8 h-8 text-slate-700 group-hover:text-red-600" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-slate-400">C# .NET • SQL
+                            Server</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Compliance CRM</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Internal CRM for Quest Capital's Regulatory Area. Connected to corporate databases to provide
+                        strategic customer insights and automated reporting.
+                    </p>
+                    <span class="text-xs font-semibold text-slate-400 italic">Enterprise Private Project</span>
+                </div>
+                <div
+                    class="group bg-white border border-black/5 rounded-3xl p-8 hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-300">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="p-3 bg-slate-100 rounded-2xl group-hover:bg-red-50 transition-colors">
+                            <svg class="w-8 h-8 text-slate-700 group-hover:text-red-600" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Ionic •
+                            TypeScript</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">QR Attendance System</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Hybrid mobile application (iOS/Android) for attendance tracking. Features dynamic QR
+                        code generation and real-time registration via external API.
+                    </p>
+                    <a href="https://github.com/benjaminloboslorca/myApp3" target="_blank"
+                        class="inline-flex items-center font-bold text-red-600 gap-2 group-hover:gap-3 transition-all">
+                        View Code <span>→</span>
+                    </a>
+                </div>
+
+                <div
+                    class="group bg-white border border-black/5 rounded-3xl p-8 hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-300">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="p-3 bg-slate-100 rounded-2xl group-hover:bg-red-50 transition-colors">
+                            <svg class="w-8 h-8 text-slate-700 group-hover:text-red-600" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Python • .NET</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Inventory Automation</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Internal code for the CRM of Quest Capital designed to optimize commercial operations.
+                        Automated Excel report generation from customer database using .NET, Python and SQL
+                        Server.
+                    </p>
+                    <span class="text-xs font-semibold text-slate-400 italic">Enterprise Private Project</span>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
