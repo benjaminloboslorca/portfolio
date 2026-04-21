@@ -4,45 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamín Lobos | Portfolio</title>
+    <title>bloboslorca | Product Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#FBF5F3] text-white">
-    <header class="sticky top-0 z-50 w-full border-b border-slate-700 bg-[#000022] backdrop-blur-md">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
+<body class="bg-[#f8f5f2] text-slate-900 font-sans antialiased">
 
-                <div class="flex-shrink-0">
-                    <a href="#" class="text-xl font-bold tracking-tight">
-                        loboslorca<span class="text-[#DE3C4B]">.dev</span>
-                    </a>
-                </div>
-
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#"
-                            class="hover:text-red-400 transition-colors px-3 py-2 text-sm font-medium">Inicio</a>
-                        <a href="#"
-                            class="hover:text-red-400 transition-colors px-3 py-2 text-sm font-medium">Proyectos</a>
-                        <a href="#" class="hover:text-red-400 transition-colors px-3 py-2 text-sm font-medium">Sobre
-                            mí</a>
-                        <a href="#"
-                            class="bg-[#DE3C4B] hover:bg-[#C42847] px-4 py-2 rounded-lg text-sm font-medium transition-all">Contacto</a>
-                    </div>
-                </div>
-
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#f8f5f2]/80 backdrop-blur-md">
+        <nav class="container mx-auto flex items-center justify-between p-6">
+            <a href="#" class="font-bold text-2xl text-slate-900 tracking-tighter">
+                bloboslorca.<span class="text-red-600">dev</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-semibold uppercase tracking-widest">
+                <a href="#" class="text-slate-500 hover:text-red-600 transition-colors">Proyectos</a>
+                <a href="#" class="text-slate-500 hover:text-red-600 transition-colors">Sobre mí</a>
+                <a href="#"
+                    class="bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-red-600 transition-all shadow-xl">
+                    Contacto
+                </a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <p>Benjamín Lobos</p> <span> Software Engineer | Go Developer</span>
+    <main class="flex flex-col items-center justify-center min-h-screen px-6">
+
+        <div class="max-w-5xl w-full text-center space-y-8">
+            <div class="space-y-4">
+                <h1 class="text-7xl  font-black text-slate-900 tracking-tight leading-none uppercase">
+                    Benjamin <br class="hidden md:block"> Lobos Lorca
+                </h1>
+                <p class="text-red-600 font-bold tracking-[0.4em] uppercase text-sm animate-fade-in">
+                    Product Engineer
+                </p>
+            </div>
+
+            <p class="mt-12 text-slate-600 leading-relaxed text-xl md:text-2xl max-w-3xl mx-auto font-light">
+                Software Product Engineer with a strong foundation in
+                <span class="font-bold text-slate-900 border-b-2 border-red-200">Go</span> and cloud systems.
+                I leverage <span class="font-bold text-slate-900 border-b-2 border-red-200">HTMX</span> and
+                <span class="font-bold text-slate-900 border-b-2 border-red-200">Tailwind CSS</span> to build modern
+                frontends,
+                backed by robust <span class="font-bold text-slate-900">Go microservices</span> on
+                <span class="font-bold text-slate-900">AWS</span>.
+            </p>
+
+            <div class="pt-10">
+                <a href="#proyectos" class="group text-slate-900 font-bold text-lg inline-flex items-center gap-2">
+                    Ver mis proyectos
+                    <span class="group-hover:translate-x-2 transition-transform duration-300">→</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full max-w-6xl mt-32 pt-12 border-t border-slate-200/60">
+            <h2 class="text-center text-[10px] font-bold text-slate-400 uppercase tracking-[0.5em] mb-16">
+                Expertise Stack
+            </h2>
+
+            <div class="flex flex-wrap justify-center items-center gap-x-20 gap-y-16">
+                <div class="group flex flex-col items-center gap-4">
+                    <img src="Img/go-svgrepo-com.svg" alt="Go"
+                        class="h-16 w-auto opacity-40 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" />
+                </div>
+                <div class="group flex flex-col items-center gap-4">
+                    <img src="Img/aws-svgrepo-com.svg" alt="AWS"
+                        class="h-16 w-auto opacity-40 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" />
+                </div>
+                <div class="group flex flex-col items-center gap-4">
+                    <img src="Img/logo.png" alt="HTMX"
+                        class="h-16 w-auto opacity-40 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" />
+                </div>
+                <div class="group flex flex-col items-center gap-4">
+                    <img src="Img/tailwind-svgrepo-com.svg" alt="Tailwind"
+                        class="h-16 w-auto opacity-40 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" />
+                </div>
+                <div class="group flex flex-col items-center gap-4">
+                    <img src="Img/sql-svgrepo-com.svg" alt="SQL"
+                        class="h-20 w-auto opacity-40 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" />
+                </div>
+            </div>
+        </div>
+
     </main>
 
-    <footer>
-
-    </footer>
 </body>
 
 </html>
