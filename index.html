@@ -6,85 +6,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bloboslorca | Product Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-[#f8f5f2] text-slate-900 font-sans antialiased">
+<body>
 
-    <header class="fixed top-0 left-0 w-full z-50 bg-[#f8f5f2]/80 backdrop-blur-md">
-        <nav class="container mx-auto flex items-center justify-between p-6">
-            <a href="#" class="font-bold text-2xl text-slate-900 tracking-tighter">
-                bloboslorca.<span class="text-red-600">dev</span>
-            </a>
-            <div class="hidden md:flex items-center space-x-8 text-sm font-semibold uppercase tracking-widest">
-                <a href="#" class="text-slate-500 hover:text-red-600 transition-colors">Proyectos</a>
-                <a href="#" class="text-slate-500 hover:text-red-600 transition-colors">Sobre mí</a>
-                <a href="#"
-                    class="bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-red-600 transition-all shadow-xl">
-                    Contacto
+    <div class="bg-grid"></div>
+    <div class="noise-bg"></div>
+
+    <!-- NAV -->
+    <header class="fixed top-0 left-0 w-full z-50">
+        <div class="flex justify-center pt-5">
+            <nav class="nav-pill flex items-center gap-1 px-4 py-2 rounded-full">
+                <a href="#" class="font-bold text-sm text-slate-900 tracking-tight mr-3 px-2">
+                    bloboslorca<span class="accent">.</span>dev
                 </a>
-            </div>
-        </nav>
+                <div class="divider-line"></div>
+                <a href="#" class="nav-link">Proyectos</a>
+                <a href="#" class="nav-link">Sobre mí</a>
+                <div class="divider-line"></div>
+                <a href="#" class="nav-link" style="color: #dc2626; font-weight: 600;">Contacto →</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="flex flex-col items-center justify-center min-h-screen px-6">
+    <!-- HERO -->
+    <main class="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16">
 
-        <div class="max-w-5xl w-full text-center space-y-8">
-            <div class="space-y-4">
-                <h1 class="text-6xl  font-black text-slate-900 tracking-tight leading-none uppercase">
-                    <br class="hidden md:block"> BLobosLorca
-                </h1>
-                <p class="text-red-600 font-bold tracking-[0.4em] uppercase text-sm animate-fade-in">
-                    Product Engineer
-                </p>
+        <div class="max-w-5xl w-full mx-auto">
+
+            <!-- Tag de disponibilidad -->
+            <div class="flex justify-center mb-10">
+                <span class="hero-tag">
+                    <span class="dot"></span>
+                    Disponible para proyectos
+                </span>
             </div>
 
-            <p class="mt-12 text-slate-600 leading-relaxed text-xl md:text-2xl max-w-3xl mx-auto font-light">
-                Software Product Engineer with a strong foundation in
-                <span class="font-bold text-slate-900 border-b-2 border-red-200">Go</span> and cloud systems.
-                I leverage <span class="font-bold text-slate-900 border-b-2 border-red-200">HTMX</span> and
-                <span class="font-bold text-slate-900 border-b-2 border-red-200">Tailwind CSS</span> to build modern
-                frontends,
-                backed by robust <span class="font-bold text-slate-900">Go microservices</span> on
-                <span class="font-bold text-slate-900">AWS</span>.
+            <!-- Headline -->
+            <div class="text-center mb-10 ">
+                <h1>
+                    Blobos<br><span class="accent">Lorca</span>
+                </h1>
+            </div>
+
+            <!-- Role badge -->
+            <div class="flex justify-center mb-10">
+                <div
+                    style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 100px; border: 1px solid rgba(220,38,38,0.2); background: rgba(220,38,38,0.04);">
+                    <span
+                        style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #dc2626;">Product
+                        Engineer</span>
+                </div>
+            </div>
+
+            <!-- Descripción -->
+            <p class="description text-center max-w-3xl mx-auto mb-12">
+                Construyo productos de software end-to-end con
+                <span class="tag">Go</span> y cloud systems.
+                Frontends modernos con <span class="tag">HTMX</span> y <span class="tag">Tailwind CSS</span>,
+                respaldados por microservicios robustos en <span class="tag">AWS</span>.
             </p>
 
-            <div class="pt-10">
-                <a href="#proyectos" class="group text-slate-900 font-bold text-lg inline-flex items-center gap-2">
-                    Ver mis proyectos
-                    <span class="group-hover:translate-x-2 transition-transform duration-300">→</span>
+            <!-- CTAs -->
+            <div class="flex flex-wrap items-center justify-center gap-4 mb-20">
+                <a href="#proyectos" class="cta-primary">
+                    Ver proyectos
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="#" class="cta-secondary">
+                    Descargar CV
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 3v7M5 7l3 3 3-3M3 13h10" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
                 </a>
             </div>
-        </div>
 
-        <div class="w-full max-w-6xl mt-32 pt-12 border-t border-slate-200/60">
-            <h2 class="text-center text-[10px] font-bold text-slate-400 uppercase tracking-[0.5em] mb-16">
-                Expertise Stack
-            </h2>
-
-            <div class="flex flex-wrap justify-center items-center gap-x-20 gap-y-16">
-                <div class="group flex flex-col items-center gap-4">
-                    <img src="Img/go-svgrepo-com.svg" alt="Go"
-                        class="h-16 w-auto opacity-40 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" />
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+                <div class="stat-card text-center">
+                    <p class="text-3xl font-black text-slate-900 mb-1">muchos</p>
+                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Años exp.</p>
                 </div>
-                <div class="group flex flex-col items-center gap-4">
-                    <img src="Img/aws-svgrepo-com.svg" alt="AWS"
-                        class="h-16 w-auto opacity-40 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" />
+                <div class="stat-card text-center">
+                    <p class="text-3xl font-black text-slate-900 mb-1">caleta bro</p>
+                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Proyectos</p>
                 </div>
-                <div class="group flex flex-col items-center gap-4">
-                    <img src="Img/logo.png" alt="HTMX"
-                        class="h-16 w-auto opacity-40 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" />
+                <div class="stat-card text-center">
+                    <p class="text-3xl font-black text-slate-900 mb-1">alo</p>
+                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Tecnologías</p>
                 </div>
-                <div class="group flex flex-col items-center gap-4">
-                    <img src="Img/tailwind-svgrepo-com.svg" alt="Tailwind"
-                        class="h-16 w-auto opacity-40 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" />
-                </div>
-                <div class="group flex flex-col items-center gap-4">
-                    <img src="Img/sql-svgrepo-com.svg" alt="SQL"
-                        class="h-20 w-auto opacity-40 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" />
+                <div class="stat-card text-center">
+                    <p class="text-3xl font-black text-slate-900 mb-1">∞</p>
+                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Curiosidad</p>
                 </div>
             </div>
-        </div>
 
+            <!-- Stack -->
+            <div class="border-t border-black/6 pt-12">
+                <p class="section-label text-center mb-8">Expertise Stack</p>
+                <div class="flex flex-wrap justify-center gap-3">
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="Img/go-svgrepo-com.svg" alt="Go"
+                                style="width:20px;height:20px;object-fit:contain;">
+                        </div>
+                        Go
+                        <span style="font-size:11px;color:#999;font-weight:400;">Backend</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="Img/aws-svgrepo-com.svg" alt="AWS"
+                                style="width:20px;height:20px;object-fit:contain;">
+                        </div>
+                        AWS
+                        <span style="font-size:11px;color:#999;font-weight:400;">Cloud</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="Img/logo.png" alt="HTMX" style="width:20px;height:20px;object-fit:contain;">
+                        </div>
+                        HTMX
+                        <span style="font-size:11px;color:#999;font-weight:400;">Frontend</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="Img/tailwind-svgrepo-com.svg" alt="Tailwind"
+                                style="width:20px;height:20px;object-fit:contain;">
+                        </div>
+                        Tailwind CSS
+                        <span style="font-size:11px;color:#999;font-weight:400;">UI</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="Img/sql-svgrepo-com.svg" alt="SQL"
+                                style="width:20px;height:20px;object-fit:contain;">
+                        </div>
+                        SQL
+                        <span style="font-size:11px;color:#999;font-weight:400;">Database</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div class="flex justify-center mt-14">
+                <div class="scroll-indicator">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 4v12M5 11l5 5 5-5" stroke="#aaa" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    Scroll
+                </div>
+            </div>
+
+        </div>
     </main>
 
 </body>
