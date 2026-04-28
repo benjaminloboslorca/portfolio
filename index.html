@@ -35,30 +35,30 @@
 <body>
     <!-- NAV -->
     <header class="fixed top-0 left-0 w-full z-50">
-        <div class="flex justify-center pt-5">
-            <nav class="nav-pill flex items-center gap-1 px-4 py-2 rounded-full">
-                <a href="#" class="font-bold text-sm text-slate-900 tracking-tight mr-3 px-2">
+        <div class="flex justify-center pt-5 px-2">
+            <nav class="nav-pill flex items-center gap-0.5 sm:gap-2 px-2 sm:px-4 py-2 rounded-full">
+
+                <a href="#"
+                    class="font-bold text-[10px] sm:text-sm text-slate-900 tracking-tight px-1 sm:px-2 whitespace-nowrap">
                     bloboslorca<span class="accent">.</span>dev
                 </a>
 
                 <div class="divider-line"></div>
 
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#about" class="nav-link">About</a>
+                <a href="#proyectos" class="nav-link text-[10px] sm:text-sm px-1.5 sm:px-3">Proyectos</a>
+                <a href="#sobre-mi" class="nav-link text-[10px] sm:text-sm px-1.5 sm:px-3">Sobre mí</a>
 
                 <div class="divider-line"></div>
 
-                <div class="flex items-center gap-3 px-2">
-                    <a href="https://github.com/benjaminloboslorca" target="_blank"
-                        class="text-slate-500 hover:text-slate-900 transition-colors">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <div class="flex items-center gap-1.5 sm:gap-3 px-1 sm:px-2">
+                    <a href="https://github.com/benjaminloboslorca" target="_blank" class="text-slate-500">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                             <path
                                 d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                         </svg>
                     </a>
-                    <a href="https://linkedin.com/in/benjaminlobos" target="_blank"
-                        class="text-slate-500 hover:text-[#0077b5] transition-colors">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <a href="https://linkedin.com/in/benjaminlobos" target="_blank" class="text-slate-500">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                             <path
                                 d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                         </svg>
@@ -67,14 +67,16 @@
 
                 <div class="divider-line"></div>
 
-                <a href="#contacto" class="nav-link" style="color: #dc2626; font-weight: 600;">Contacto →</a>
+                <a href="#contacto" class="nav-link text-[10px] sm:text-sm font-bold tracking-tight"
+                    style="color: #dc2626;">
+                    Contacto →
+                </a>
             </nav>
         </div>
     </header>
 
     <!-- HERO -->
     <main class="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16">
-
 
         <div class="bg-grid"></div>
         <div class="noise-bg"></div>
@@ -85,7 +87,7 @@
             <div class="flex justify-center mb-10">
                 <span class="hero-tag">
                     <span class="dot"></span>
-                    Open to work
+                    Disponible para trabajar
                 </span>
             </div>
 
@@ -108,16 +110,16 @@
 
             <!-- Descripción -->
             <p class="description text-center max-w-2xl mx-auto mb-14">
-                I build end-to-end software products using
-                <span class="tag">Go</span> and cloud systems.
-                Modern frontends with <span class="tag">HTMX</span> and <span class="tag">Tailwind CSS</span>,
-                backed by robust microservices on <span class="tag">AWS</span>.
+                Construyo productos de software de punta a punta con
+                <span class="tag">Go</span> y sistemas cloud.
+                Frontends modernos con <span class="tag">HTMX</span> y <span class="tag">Tailwind CSS</span>,
+                respaldados por microservicios robustos en <span class="tag">AWS</span>.
             </p>
 
             <!-- CTAs -->
             <div class="flex flex-wrap items-center justify-center gap-4 mb-20">
-                <a href="#projects" class="cta-primary">
-                    See Projects
+                <a href="#proyectos" class="cta-primary">
+                    Ver Proyectos
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                             stroke-linejoin="round" />
@@ -134,7 +136,7 @@
 
             <!-- Stack -->
             <div class="border-t border-black/6 pt-12">
-                <p class="section-label text-center mb-8">Expertise Stack</p>
+                <p class="section-label text-center mb-8">Stack de Expertise</p>
                 <div class="flex flex-wrap justify-center gap-3">
 
                     <div class="skill-item">
@@ -178,7 +180,7 @@
                                 style="width:20px;height:20px;object-fit:contain;">
                         </div>
                         SQL
-                        <span style="font-size:11px;color:#999;font-weight:400;">Database</span>
+                        <span style="font-size:11px;color:#999;font-weight:400;">Base de Datos</span>
                     </div>
 
                 </div>
@@ -197,12 +199,13 @@
         </div>
     </main>
 
-    <section id="projects" class="relative z-10 py-24 px-6 bg-white/30 backdrop-blur-sm border-t border-black/5">
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="relative z-10 py-24 px-6 bg-white/30 backdrop-blur-sm border-t border-black/5">
         <div class="max-w-5xl mx-auto">
 
             <div class="flex flex-col items-center mb-16">
                 <h2 class="text-4xl font-black mb-4">
-                    Selected<span class="accent"> Projects</span>
+                    Proyectos<span class="accent"> Destacados</span>
                 </h2>
                 <div class="w-12 h-1 bg-red-600 rounded-full"></div>
             </div>
@@ -224,12 +227,12 @@
                     </div>
                     <h3 class="text-2xl font-bold mb-3">Tres En Uno Cultivos</h3>
                     <p class="text-slate-600 mb-6 leading-relaxed">
-                        Fullstack E-commerce built for a client. Features a complete product catalog, order
-                        management system, and transactional email integration.
+                        E-commerce fullstack desarrollado para un cliente. Incluye catálogo completo de productos,
+                        sistema de gestión de pedidos e integración de correo transaccional.
                     </p>
                     <a href="https://tresenunocultivos.cl" target="_blank"
                         class="inline-flex items-center font-bold text-red-600 gap-2 group-hover:gap-3 transition-all">
-                        Live Site <span>→</span>
+                        Ver Sitio <span>→</span>
                     </a>
                 </div>
 
@@ -247,13 +250,14 @@
                         <span class="text-xs font-bold uppercase tracking-widest text-slate-400">C# .NET • SQL
                             Server</span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3">Compliance CRM</h3>
+                    <h3 class="text-2xl font-bold mb-3">CRM de Cumplimiento</h3>
                     <p class="text-slate-600 mb-6 leading-relaxed">
-                        Internal CRM for Quest Capital's Regulatory Area. Connected to corporate databases to provide
-                        strategic customer insights and automated reporting.
+                        CRM interno para el Área Regulatoria de Quest Capital. Conectado a bases de datos corporativas
+                        para entregar insights estratégicos de clientes y reportes automatizados.
                     </p>
-                    <span class="text-xs font-semibold text-slate-400 italic">Enterprise Private Project</span>
+                    <span class="text-xs font-semibold text-slate-400 italic">Proyecto Empresarial Privado</span>
                 </div>
+
                 <div
                     class="group bg-white border border-black/5 rounded-3xl p-8 hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-300">
                     <div class="flex justify-between items-start mb-6">
@@ -268,14 +272,14 @@
                         <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Ionic •
                             TypeScript</span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3">QR Attendance System</h3>
+                    <h3 class="text-2xl font-bold mb-3">Sistema de Asistencia QR</h3>
                     <p class="text-slate-600 mb-6 leading-relaxed">
-                        Hybrid mobile application (iOS/Android) for attendance tracking. Features dynamic QR
-                        code generation and real-time registration via external API.
+                        Aplicación móvil híbrida (iOS/Android) para control de asistencia. Genera códigos QR dinámicos
+                        y registra en tiempo real mediante API externa.
                     </p>
                     <a href="https://github.com/benjaminloboslorca/myApp3" target="_blank"
                         class="inline-flex items-center font-bold text-red-600 gap-2 group-hover:gap-3 transition-all">
-                        View Code <span>→</span>
+                        Ver Código <span>→</span>
                     </a>
                 </div>
 
@@ -292,24 +296,25 @@
                         </div>
                         <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Python • .NET</span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3">Inventory Automation</h3>
+                    <h3 class="text-2xl font-bold mb-3">Automatización de Inventario</h3>
                     <p class="text-slate-600 mb-6 leading-relaxed">
-                        Internal code for the CRM of Quest Capital designed to optimize commercial operations.
-                        Automated Excel report generation from customer database using .NET, Python and SQL
-                        Server.
+                        Código interno para el CRM de Quest Capital diseñado para optimizar operaciones comerciales.
+                        Generación automatizada de reportes Excel desde la base de datos de clientes con .NET, Python y
+                        SQL Server.
                     </p>
-                    <span class="text-xs font-semibold text-slate-400 italic">Enterprise Private Project</span>
+                    <span class="text-xs font-semibold text-slate-400 italic">Proyecto Empresarial Privado</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about"
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi"
         class="relative z-10 min-h-screen flex flex-col justify-center px-6 border-t border-black/5 bg-white/30 backdrop-blur-sm">
         <div class="max-w-5xl mx-auto">
             <div class="flex flex-col items-center mb-20">
                 <h2 class="text-4xl font-black mb-4">
-                    About<span class="accent"> me</span>
+                    Sobre<span class="accent"> mí</span>
                 </h2>
                 <div class="w-12 h-1 bg-red-600 rounded-full"></div>
             </div>
@@ -318,33 +323,33 @@
 
                 <div class="md:col-span-7 space-y-6 text-slate-600 leading-relaxed text-lg">
                     <p>
-                        I am a <span class="font-bold text-slate-900">Product Engineer</span> focused on building tools
-                        that solve real problems. My approach isn't just about writing code, but understanding the
-                        business impact of every feature I build.
+                        Soy un <span class="font-bold text-slate-900">Product Engineer</span> enfocado en construir
+                        herramientas que resuelven problemas reales. Mi enfoque no es solo escribir código, sino
+                        entender el impacto de negocio de cada feature que desarrollo.
                     </p>
                     <p>
-                        With experience in <span class="font-bold text-slate-900">Finance and Cybersecurity</span>, I've
-                        developed everything from internal CRMs for compliance to full-scale e-commerce platforms in
-                        production.
+                        Con experiencia en <span class="font-bold text-slate-900">Finanzas y Ciberseguridad</span>, he
+                        desarrollado desde CRMs internos de compliance hasta plataformas e-commerce completas en
+                        producción.
                     </p>
                     <p>
-                        Currently, I'm diving deep into the <span class="font-bold text-slate-900">Go & AWS</span>
-                        ecosystem, following a philosophy of keeping things simple and efficient by using technologies
-                        like HTMX to reduce frontend complexity.
+                        Actualmente profundizando en el ecosistema de <span class="font-bold text-slate-900">Go &
+                            AWS</span>, siguiendo una filosofía de simplicidad y eficiencia usando tecnologías como HTMX
+                        para reducir la complejidad del frontend.
                     </p>
                 </div>
 
                 <div class="md:col-span-5 bg-white border border-black/5 rounded-[2rem] p-10 shadow-sm shadow-black/5">
                     <div class="space-y-8">
                         <div>
-                            <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-red-600 mb-6">Background
+                            <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-red-600 mb-6">Formación
                             </h4>
                             <div class="flex items-center gap-4">
                                 <div class="w-10 h-10 bg-slate-100 rounded-xl flex items-center justify-center text-xl">
                                     🎓</div>
                                 <div>
-                                    <p class="font-bold text-slate-900 leading-tight">Software Engineering</p>
-                                    <p class="text-sm text-slate-500">Duoc UC Graduate</p>
+                                    <p class="font-bold text-slate-900 leading-tight">Ingeniería en Software</p>
+                                    <p class="text-sm text-slate-500">Egresado Duoc UC</p>
                                 </div>
                             </div>
                         </div>
@@ -354,14 +359,15 @@
                                 <div class="w-10 h-10 bg-slate-100 rounded-xl flex items-center justify-center text-xl">
                                     🌍</div>
                                 <div>
-                                    <p class="font-bold text-slate-900 leading-tight">English Proficiency</p>
-                                    <p class="text-sm text-slate-500 font-medium">B2 Level (TOEIC)</p>
+                                    <p class="font-bold text-slate-900 leading-tight">Inglés</p>
+                                    <p class="text-sm text-slate-500 font-medium">Nivel B2 (TOEIC)</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="pt-8 border-t border-black/5">
-                            <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-red-600 mb-4">Core Certs
+                            <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-red-600 mb-4">
+                                Certificaciones
                             </h4>
                             <div class="flex flex-wrap gap-2">
                                 <span
@@ -377,6 +383,59 @@
             </div>
         </div>
     </section>
+    <!-- CONTACTO + FOOTER -->
+    <section id="contacto"
+        class="relative z-10 min-h-screen flex flex-col justify-between border-t border-black/5 bg-white/30 backdrop-blur-sm">
+
+        <!-- Contenido contacto centrado -->
+        <div class="flex-1 flex items-center justify-center px-6 py-24">
+            <div class="max-w-5xl w-full mx-auto text-center">
+                <h2 class="text-4xl font-black mb-4">
+                    ¿Hablamos<span class="accent">?</span>
+                </h2>
+                <div class="w-12 h-1 bg-red-600 rounded-full mx-auto mb-8"></div>
+                <p class="text-slate-600 text-lg max-w-xl mx-auto mb-10">
+                    Estoy disponible para proyectos freelance, colaboraciones o simplemente conversar sobre tecnología.
+                </p>
+                <a href="mailto:loboslorcadev@gmail.com" class="cta-primary inline-flex">
+                    Escribir un correo
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer pegado al fondo -->
+        <footer class="border-t border-black/5 py-8 px-6">
+            <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+                <span class="font-bold text-slate-900 text-sm">
+                    blobos<span class="accent">.</span>dev
+                </span>
+                <p class="text-slate-400 text-xs">
+                    © 2025 Benjamín Lobos. Todos los derechos reservados.
+                </p>
+                <div class="flex items-center gap-4">
+                    <a href="https://github.com/benjaminloboslorca" target="_blank"
+                        class="text-slate-400 hover:text-slate-900 transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/benjaminlobos" target="_blank"
+                        class="text-slate-400 hover:text-[#0077b5] transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </section>
+
 </body>
 
 </html>
